@@ -81,6 +81,12 @@ This is the empirical distribution of the test statistic used which again is abs
 - Test Statistic: Proportion of anomalies occuring in winter compared to the generated sample distribution of 0.25 for every season
 - Calculate P-value = Calculated by seeing if the proportion of sample is less than or equal to proportion of anomolies in winter
 - P-value = 0.506 fail to reject the null hypothesis
+Test 2
+- Null Hypothesis:The average number of anomalies in the first 10 years is the same as the average number of anomalies in the last 7
+- Alternate Hypothesis: The average number of anomalies in the last 7 years is higher than the average number of anomalies in the first 10 years
+- Test Statistic: Difference in the average number of anomalies that occurred each year in the first 10 and last 7
+- Calculate P-value = Calculated by seeing if the proportion of sample is less than if it were to be sampled evenly
+- P-value = 0.01 reject the null hypothesis in favor of the alternate
 
 ## Framing a Prediction Problem
 We are predicting the column Cause. Category and using a multiclass classification. The reason we chose Cause.Category because we wanted to potentially understand how to fix or stop power grid issues by accurately predicting the cause and the metric we are choosing to evaluate by accuracy because we want to see the ratio of the number of correctly predicted over the total number of predictions
