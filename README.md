@@ -27,20 +27,21 @@ The first step in data cleaning was to convert the Excel file into CSV and then 
   frameborder="0"
 > </iframe>
 
+This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times, and the histogram also appears to be skewed to the right.
 <iframe
   src="assets/univariate.html"
   width="800"
   height="600"
   frameborder="0"
 > </iframe> 
-This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times, and the histogram also appears to be skewed to the right.
+
+This is a bivariate plot of the Anomaly level over Outage.Start Year. There appears to be a pattern of average anomaly level being higher in the latter years than the previous years.
  <iframe
   src="assets/bivariate.html"
   width="800"
   height="600"
   frameborder="0"
 > </iframe> 
-This is a bivariate plot of the Anomaly level over Outage.Start Year. There appears to be a pattern of average anomaly level being higher in the latter years than the previous years.
 
 | CLIMATE.REGION     |   CUSTOMERS.AFFECTED |
 |:-------------------|---------------------:|
@@ -59,10 +60,13 @@ This table aggregated by mean customers affected in each climate region shows th
 ## Assessment of Missingness
 We believe that the NMAR Column in the Outage dataset is Customers Affected because it depends on the population and some additional data that could be used to make this into MAR data by having more information about the historical trends to have more data on the missingness. 
 
-After conducting a Permutation test with Customers Affected with dependency related to other columns, we found that it suggested that with a p-value of 0.048, Customers Affected might have some dependency on the column IND.Customers
+The test statistic conducted was the absolute difference in sample means between columns of IND.Customers and Customers Affected to see if the Customers Affected missingness depends on the IND.Customers column, and after conducting the test, a p-value of 0.046 was achieved suggesting that 
  <iframe
   src="assets/missing.html"
   width="800"
   height="600"
   frameborder="0"
 > </iframe> 
+This is the empirical distribution of the test statistic used which again is absolute difference in sample means  and the observed test statistic is 4512.66
+
+
