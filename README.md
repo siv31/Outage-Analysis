@@ -83,4 +83,26 @@ This is the empirical distribution of the test statistic used which again is abs
 - P-value = 0.506 fail to reject the null hypothesis
 
 ## Framing a Prediction Problem
-We are predicting the column Cause. Category and using a multiclass classification. The reason we chose Cause.Category because wanted to potentially understand how to fix or stop power grid issues by accurately predicting the cause and the metric we are choosing to evaluate by accuracy because we want to see the ratio of the number of correctly predicted over the total number of predictions
+We are predicting the column Cause. Category and using a multiclass classification. The reason we chose Cause.Category because we wanted to potentially understand how to fix or stop power grid issues by accurately predicting the cause and the metric we are choosing to evaluate by accuracy because we want to see the ratio of the number of correctly predicted over the total number of predictions
+
+## Baseline Model
+The baseline mode is the random forest, and the features we used are anomaly level, climate region, and month.
+ - Climate.Region: We OneHotEncoded this column because it was qualitative and we dropped the first column to not have multicoliineraity
+ - Month and anomaly-level: These columns were left alone as these were quantitative.
+
+## Final Model
+To improve our baseline model to be more accurate at predicting the cause of the power outages, we decided to add three more features to our final model.
+
+ - "OUTAGE.START.TIME" : We decided to add this feature to our next model because we saw a co-relation between the time that the outage started and the Anomaly Level. Because of this co-relation, we believed that outage start time could be related to the reason that the outage started in the first place.
+We used a custom transformer to Binarize the time based on AM and PM to categorize Afternoon and Evening vs Morning.
+- "CUSTOMERS.AFFECTED" : The customers affected by each outage could also be a predictor of the cause of the outage itself. The factors related to an outage could be higher in urban and suburban areas compared to rural ones due to the locations of cities across the country.
+This was a numerical column so we left it as it was
+- "CLIMATE.CATEGORY" : The climate plays a large role in the efficient transportation of electricity. Based on environmental conditions, states often impose regulations on how much electricity can be used or transported at a time. The current environment can give us clues into what caused the outage. We One Hot Encoded this column because it was a categorical column. We dropped the first to prevent Multicollinearity
+
+To choose the best model, we were debating between a Decision Tree and a Random Forest Classification model. We decided to choose a Random Forest because it combined the best aspects of a Decision Tree while averaging it out to ensure the best predictions
+
+We then used GridSearchCV to test which value would be best for the max depth hyperparameter and how many estimators would be best for the n_estimators hyperparameter. The test resulted in us finding that a depth of 7 and 110 estimators gave us the best validation score.
+
+While the baseline model had a score of just 0.48, the final model has a score of 0.87. This was a significant improvement in the score of the final model over the baseline model. The score for the baseline model was likely so low because we were under fitting the training data.
+
+## Fairness Analysis
