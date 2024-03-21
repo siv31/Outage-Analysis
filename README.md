@@ -41,7 +41,6 @@ This is a histogram plot of Anomaly levels to evaluate if there was an anomaly l
   height="600"
   frameborder="0"
   > </iframe> 
-  
 This is a bivariate plot of the Anomaly level over Outage.Start Year. There appears to be a pattern of average anomaly level being higher in the latter years than the previous years.
 
 
