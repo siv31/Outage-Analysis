@@ -56,3 +56,5 @@ This is a bivariate plot of the Anomaly level over Outage.Start Year. There appe
 | West North Central |              47316   |
 
 This table aggregated by mean customers affected in each climate region shows the region of customers that were most affected by power outages. 
+
+## Assessment of Missingness
