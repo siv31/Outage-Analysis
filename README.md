@@ -89,6 +89,7 @@ We are predicting the column Cause. Category and using a multiclass classificati
 The baseline mode is the random forest, and the features we used are anomaly level, climate region, and month.
  - Climate.Region: We OneHotEncoded this column because it was qualitative and we dropped the first column to not have multicoliineraity
  - Month and anomaly-level: These columns were left alone as these were quantitative.
+The accuracy score this model achieved was 0.48, which we thought was okay but could definitely improve because if we added more features that were relevant, we feel like the score would improve.
 
 ## Final Model
 To improve our baseline model to be more accurate at predicting the cause of the power outages, we decided to add three more features to our final model.
@@ -106,3 +107,11 @@ We then used GridSearchCV to test which value would be best for the max depth hy
 While the baseline model had a score of just 0.48, the final model has a score of 0.87. This was a significant improvement in the score of the final model over the baseline model. The score for the baseline model was likely so low because we were under fitting the training data.
 
 ## Fairness Analysis
+In regards to our final model, we decided to test whether there was a significant difference in the precision rate depending on the season and temperature outside. 
+
+Our Null Hypothesis: The precision would be the same across warmer and colder months (Months 12, 1, 2, and 3). 
+Our Alternate Hypothesis: The precision would be lower for colder months than warmer months.
+
+We created a column to group by whether it was a colder or warmer month. We then calculated the precision score on each subset and took the difference between the scores as the test statistic. We decided on a significance level of 0.05 for this test.
+
+After running our permutation test, we got a p-value of 0.049, which is less than our signidicance threshold. Our conclusion is that we reject the null in favor of the alternate. This means that there is a bias in our model that makes it less precise at predicting the cause of outages during the colder months.
