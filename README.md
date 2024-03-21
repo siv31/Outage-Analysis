@@ -25,15 +25,24 @@ The first step in data cleaning was to convert the Excel file into CSV and then 
   width="800"
   height="600"
   frameborder="0"
-  ></iframe>
+  > </iframe>
 
   <iframe
   src="assets/univariate.html"
   width="800"
   height="600"
   frameborder="0"
-  ></iframe> 
+  > </iframe> 
 This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times, and the histogram also appears to be skewed to the right.
+ 
+ <iframe
+  src="assets/biivariate.html"
+  width="800"
+  height="600"
+  frameborder="0"
+  > </iframe> 
+  
+This is a bivariate plot of the Anomaly level over Outage.Start Year. There appears to be a pattern of average anomaly level being higher in the latter years than the previous years.
 
 
 
