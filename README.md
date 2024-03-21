@@ -87,10 +87,10 @@ We are predicting the column Cause. Category and using a multiclass classificati
 
 ## Baseline Model
 The baseline mode is the random forest, and the features we used are anomaly level, climate region, and month.
- - Climate.Region: We OneHotEncoded this column because it was qualitative and we dropped the first column to not have multicoliineraity
+ - Climate.Region: We OneHotEncoded this column because it was qualitative and we dropped the first column to not have multicollinearity
  - Month and anomaly-level: These columns were left alone as these were quantitative.
 
-The accuracy score this model achieved was 0.48, which we thought was okay but could definitely improve because if we added more features that were relevant, we feel like the score would improve.
+This model's accuracy score was 0.48, which we thought was okay but could definitely improve. If we added more relevant features, we feel like the score would improve.
 
 ## Final Model
 To improve our baseline model to be more accurate at predicting the cause of the power outages, we decided to add three more features to our final model.
