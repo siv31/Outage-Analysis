@@ -75,3 +75,4 @@ This is the empirical distribution of the test statistic used which again is abs
   frameborder="0"
 > </iframe> 
 
+## Hypothesis Testing
