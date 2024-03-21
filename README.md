@@ -68,5 +68,10 @@ The test statistic conducted was the absolute difference in sample means between
   frameborder="0"
 > </iframe> 
 This is the empirical distribution of the test statistic used which again is absolute difference in sample means  and the observed test statistic is 4512.66
-
+ <iframe
+  src="assets/empirical.html"
+  width="800"
+  height="600"
+  frameborder="0"
+> </iframe> 
 
