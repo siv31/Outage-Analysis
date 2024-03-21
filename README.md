@@ -20,21 +20,22 @@ The dataset has 1534 rows and 58 columns. The columns relevant to the analysis w
 ## Data Cleaning and Exploratory Data Analysis
 The first step in data cleaning was to convert the Excel file into CSV and then remove empty rows and columns. Then, it was necessary to convert the Outage.Start and Outage.Restoration column into a datetime column and did so by calling the to_datetime function. Values are left as NaN because it felt better to maintain integrity of the dataset and not potentially create a trend that did not exist
 
-<iframe
+  <iframe
   src="assets/df.html"
   width="800"
   height="600"
   frameborder="0"
-></iframe>
+  ></iframe>
 
-
-
-<iframe
+  <iframe
   src="assets/univariate.html"
   width="800"
   height="600"
   frameborder="0"
-></iframe> This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times, and the histogram also appears to be skewed to the right.
+  ></iframe> 
+This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times, and the histogram also appears to be skewed to the right.
+
+
 
 
 
