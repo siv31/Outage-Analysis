@@ -18,6 +18,7 @@ The Dataset has 1534 rows and 58 columns. The columns relevant to the analysis w
 - OUTAGE.END.TIME: The time the outage finished
 
 ## Data Cleaning and Exploratory Data Analysis
+The first step in data cleaning was to convert the Excel file into CSV and then remove empty rows and columns. Then, it was necessary to convert the Outage.Start and Outage.Restoration column into a datetime column and did so by calling the to_datetime function.
 
 <iframe
   src="assets/df.html"
