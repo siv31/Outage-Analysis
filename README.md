@@ -81,6 +81,7 @@ This is the empirical distribution of the test statistic used which again is abs
 - Test Statistic: Proportion of anomalies occuring in winter compared to the generated sample distribution of 0.25 for every season
 - Calculate P-value = Calculated by seeing if the proportion of sample is less than or equal to proportion of anomolies in winter
 - P-value = 0.506 fail to reject the null hypothesis
+  
 Test 2
 - Null Hypothesis:The average number of anomalies in the first 10 years is the same as the average number of anomalies in the last 7
 - Alternate Hypothesis: The average number of anomalies in the last 7 years is higher than the average number of anomalies in the first 10 years
