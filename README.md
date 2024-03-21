@@ -1,5 +1,5 @@
 # Outage-Analysis
-UCSD DSC80 Project 4
+By Sivaram Ari and Mihir Joshi
 
 ## Introduction
 The Dataset used in this project is Power Outages that occurred in the United States. We were curious if there was a pattern in the power outages that happened, and the question we had in the project is, Where and When do outages arise in America? Answering this question can provide insight into how these outages occur and could prevent them.
