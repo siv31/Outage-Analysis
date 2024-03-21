@@ -89,6 +89,7 @@ We are predicting the column Cause. Category and using a multiclass classificati
 The baseline mode is the random forest, and the features we used are anomaly level, climate region, and month.
  - Climate.Region: We OneHotEncoded this column because it was qualitative and we dropped the first column to not have multicoliineraity
  - Month and anomaly-level: These columns were left alone as these were quantitative.
+
 The accuracy score this model achieved was 0.48, which we thought was okay but could definitely improve because if we added more features that were relevant, we feel like the score would improve.
 
 ## Final Model
