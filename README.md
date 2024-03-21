@@ -57,3 +57,6 @@ This is a bivariate plot of the Anomaly level over Outage.Start Year. There appe
 This table aggregated by mean customers affected in each climate region shows the region of customers that were most affected by power outages. 
 
 ## Assessment of Missingness
+We believe that the NMAR Column in the Outage dataset is Customers Affected because it depends on the population and some additional data that could be used to make this into MAR data by having more information about the historical trends to have more data on the missingness. 
+
+After conducting a Permutation test with Customers Affected with dependency related to other columns, we found that it suggested that with a p-value of 0.048, Customers Affected might have some dependency on the column IND.Customers
