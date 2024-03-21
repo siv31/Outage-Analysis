@@ -2,9 +2,9 @@
 By Sivaram Ari and Mihir Joshi
 
 ## Introduction
-The Dataset used in this project is Power Outages that occurred in the United States. We were curious if there was a pattern in the power outages that happened, and the question we had in the project is, Where and When do outages arise in America? Answering this question can provide insight into how these outages occur and could prevent them.
+The dataset used in this project is Power Outages that occurred in the United States. We were curious if there was a pattern in the power outages that happened, and the question we had in the project is, Where and When do outages arise in America? Answering this question can provide insight into how these outages occur and could prevent them.
 
-The Dataset has 1534 rows and 58 columns. The columns relevant to the analysis were Anomaly Level, Customers Affected, U.S. State, Ind.Customers, Year, Month, Climate Region, Cause Category, Outage start time, and Outage End Time.
+The dataset has 1534 rows and 58 columns. The columns relevant to the analysis were Anomaly Level, Customers Affected, U.S. State, Ind.Customers, Year, Month, Climate Region, Cause Category, Outage start time, and Outage End Time.
 
 - ANOMALY.LEVEL: The ONI index tracks El Niño and La Niña events based on sea surface temperature anomalies
 - CUSTOMERS.AFFECTED: The count of customers that were affected by power outages
@@ -35,8 +35,7 @@ The first step in data cleaning was to convert the Excel file into CSV and then 
   height="600"
   frameborder="0"
 ></iframe>
-
-This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times.
+This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times, and the histogram also appears to be skewed to the right.
 
 
 
