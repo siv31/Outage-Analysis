@@ -35,7 +35,7 @@ The first step in data cleaning was to convert the Excel file into CSV and then 
   height="600"
   frameborder="0"
 ></iframe>
-
+This is a histogram plot of Anomaly levels to evaluate if there was an anomaly level that appeared the most, which was -0.3, appearing 191 times.
 
 
 
